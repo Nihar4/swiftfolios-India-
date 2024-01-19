@@ -1,0 +1,867 @@
+.rupee__class {
+  font-family: 'Lato', sans-serif !important;
+}
+
+.positive {
+  color: var(--main-green);
+  /* display: flex; */
+}
+
+.negative {
+  color: var(--main-red);
+  /* display: flex; */
+}
+
+.neutral {
+  color: var(--font-primary);
+  display: flex;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  color: var(--font-primary);
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+
+.app {
+  width: 100%;
+  height: 100%;
+  background-color: var(--white);
+  overflow: hidden;
+  position: relative;
+}
+
+/* 
+.app p 
+{
+  margin: 0 !important;
+  }
+                                                                */
+.app__onboard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.app__onboard p {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 15px !important;
+}
+
+.app .compare__limit__popup,
+.app .indicator__limit__popup {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0px 15px 0px 0;
+  max-width: 400px;
+  height: 60px;
+  background-color: var(--white);
+  box-shadow: rgba(17, 17, 26, 0.2) 2px 2px 16px;
+  z-index: 100000;
+  border-radius: 3px;
+  transition: 0.4s;
+  display: flex;
+}
+
+.app .compare__limit__popup.active,
+.app .indicator__limit__popup.active {
+  /* display: flex; */
+  top: 3%;
+}
+
+.app .compare__limit__popup .compare__limit__sideline,
+.app .indicator__limit__popup .indicator__limit__sideline {
+  position: absolute;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background-color: var(--main-blue);
+}
+
+.app .compare__limit__popup .compare__limit__content,
+.app .indicator__limit__popup .indicator__limit__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5px 5px 15px;
+}
+
+.app .compare__limit__popup .compare__limit__content .compare__limit__text,
+.app .indicator__limit__popup .indicator__limit__content .indicator__limit__text {
+  margin-right: 20px;
+}
+
+.app .compare__limit__popup .compare__limit__content .compare__limit__text h6,
+.app .indicator__limit__popup .indicator__limit__content .indicator__limit__text h6 {
+  font-size: 14px;
+  color: var(--font-primary);
+}
+
+.app .compare__limit__popup .compare__limit__content .compare__limit__text p,
+.app .indicator__limit__popup .indicator__limit__content .indicator__limit__text p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.app .compare__limit__popup .compare__limit__content .compare__limit__close,
+.app .indicator__limit__popup .indicator__limit__content .indicator__limit__close {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.app .compare__limit__popup .compare__limit__content .compare__limit__close img,
+.app .indicator__limit__popup .indicator__limit__content .indicator__limit__close img {
+  width: 12px;
+  height: 12px;
+}
+
+.app .compare__limit__popup .compare__limit__content .compare__limit__close:hover,
+.app .indicator__limit__popup .indicator__limit__content .indicator__limit__close:hover {
+  background-color: #f3f3f3;
+}
+
+.app__back__blur {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background: #87888850;
+  /* background-color: #00A0E3; */
+  z-index: 10000;
+  display: none;
+}
+
+.app__back__blur.active {
+  display: block;
+}
+
+
+
+
+
+
+/*app__footer*/
+.app__footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-items: center;
+}
+
+.app__footer__menu__icon {
+  display: none;
+  margin-left: 15px;
+}
+
+.app__footer__icon>div>div {
+  width: 45px !important;
+  height: 45px !important;
+}
+
+.app__footer.app__footer__zoom {
+  height: 0;
+  display: none;
+}
+
+.app__footer>div {
+  cursor: pointer;
+}
+
+.app__footer span {
+  font-size: 12px;
+  color: var(--font-primary);
+  margin: 0 8px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+}
+
+.app__footer .app__logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 70px;
+  cursor: pointer;
+}
+
+.app__footer .app__logout img {
+  width: 22px;
+  transform: rotate(180deg);
+  margin-right: 4px;
+}
+
+.app__footer .app__logout p {
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--font-primary);
+}
+
+.app__footer .app__footer__menu {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.bound__labels {
+  padding: 4px 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
+
+.price__bounds__outer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 300px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
+
+.price__bounds__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.PriceUpAndLowBounds {
+  position: relative;
+  width: 10px;
+  background-color: #ffffff;
+}
+
+.PriceUpAndLowBounds .pul__inner {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #470985;
+  border-radius: 10px;
+  animation: create .5s linear forwards;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.label__up {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.label__down {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@keyframes create {
+  0% {
+    height: 0;
+  }
+
+  100% {
+    height: 100%;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+
+
+  .app__body__left .react-stockcharts-x-axis {
+    display: block !important;
+  }
+
+
+
+  /*app header*/
+  .swift-header {
+    padding: 0 5px;
+    min-height: 45px;
+    height: 9%;
+    margin-top: 5px;
+    justify-content: space-around;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: darkcyan; */
+  }
+
+  /* .swift-header.swift-header__zoom 
+     {
+       height: 0;
+       display: none;
+     } */
+
+  .swift-header .brand__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swift-header .brand__logo {
+    /* display: none; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .swift-header .brand__logo img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .swift-header .brand__name {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: auto;
+    font-size: 10px !important;
+    margin: -6px 0px 0 0px !important;
+    color: var(--font-primary);
+  }
+
+  .swift-header .brand__name p {
+    margin: 0 0px 0 0px !important;
+    color: var(--font-primary);
+  }
+
+  .swift-header .search__tabs {
+    padding: 10px 20px;
+  }
+
+  .swift-header .search__tabs .s__tab {
+    width: 60px;
+    height: 25px;
+    font-size: 10px;
+  }
+
+  .swift-header .stock__search__icons__wrapper {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .swift-header .stock__search {
+    min-width: 220px;
+    width: 85%;
+    height: 95%;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: static;
+  }
+
+  .swift-header .stock__search.active {
+    box-shadow: none;
+  }
+
+  .swift-header .stock__search .stock__search__icon {
+    margin: 0 0px 0 5px;
+  }
+
+  .swift-header .stock__search .stock__search__icon img {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+  }
+
+
+  .swift-header .stock__search input {
+    padding-left: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 0.2px !important;
+  }
+
+  .swift-header .stock__search .stock__suggestions {
+    position: absolute;
+    background-color: #ffffff;
+    margin-top: 2px;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 20px rgb(0 0 0 / 5%);
+    margin-top: 0px;
+    max-height: none;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: saddlebrown; */
+    display: none;
+  }
+
+  .app__suggestion__close__icon {
+    display: none;
+    margin-left: 10px;
+  }
+
+  .app__suggestion__close__icon>img {
+    width: 30px;
+  }
+
+  .app__suggestion__close__icon.active {
+    display: flex;
+  }
+
+  .swift-header .stock__search .stock__suggestions.active {
+    display: block;
+  }
+
+
+  .swift-header .stock__search .stock__suggestions .search__loader {
+    height: 200px;
+  }
+
+  .swift-header .stock__search .stock__suggestions .search__loader p {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    margin-top: 2px !important;
+  }
+
+  .swift-header .stock__search .stock__suggestions p {
+    padding: 14px 20px 14px 20px;
+    font-size: 11px;
+  }
+
+  .swift-header .stock__search .stock__suggestions p>span:nth-child(1) {
+    flex: 2;
+    font-size: 11px;
+  }
+
+  .swift-header .stock__search .stock__suggestions p>span:nth-child(2) {
+    max-width: 150px;
+    flex: 9;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 11px;
+    font-weight: 500;
+  }
+
+  .swift-header .stock__search .stock__suggestions p>span:nth-child(3) {
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .swift-header .stock__search .stock__suggestions p:hover {
+    background-color: #f7f7f7;
+  }
+
+  .swift-header .app__menu {
+    display: none;
+  }
+
+  .swift-header .app__menu__mobile__icon {
+    display: flex;
+  }
+
+  .swift-header .app__menu__mobile .app__menu__mobile__header {
+    width: 95%;
+    height: 10%;
+    padding: 0 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f3f3f3;
+    margin: 0 auto;
+  }
+
+  .app__menu__mobile .app__menu__mobile__header .app__menu__mobile__brand {
+    display: flex;
+    align-items: center;
+  }
+
+  .app__menu__mobile .app__menu__mobile__header .app__menu__mobile__brand>img {
+    width: 40px;
+    margin-right: 15px;
+    margin-top: -4px;
+  }
+
+  .app__menu__mobile .app__menu__mobile__header .app__menu__mobile__brand>span {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--font-primary);
+  }
+
+  .app__menu__mobile .app__menu__mobile__header .app__menu__mobile__close {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .app__menu__mobile .app__menu__mobile__header .app__menu__mobile__close>img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .swift-header .app__menu__mobile .app__menu__mobile__body {
+    width: 100%;
+    height: 90%;
+    padding: 0% 5%;
+  }
+
+  .swift-header .app__menu__mobile .app__menu__mobile__body>div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .swift-header .app__menu__mobile .app__menu__mobile__body>div>img {
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  .swift-header .app__menu__mobile .app__menu__mobile__body>div>span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--font-primary);
+  }
+
+  /*app body*/
+  .app__body {
+    padding: 0 10px;
+    height: 83%;
+    overflow-y: hidden;
+  }
+
+
+
+  .app__body .app__body__left {
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    /* background-color: #470985; */
+  }
+
+  .app__body .app__body__left .chart__container {
+    width: 100%;
+    height: 60%;
+  }
+
+  /* .app__body .app__body__left .chart__container.chart__container__zoom 
+      {
+        height: 85%;
+        border-radius: 0px;
+        border-top: none;
+      } */
+
+  .app__body .app__body__left .chart__container .stock__info__chart {
+    position: relative;
+    height: 93%;
+  }
+
+  /* .app__body .app__body__left .chart__container.chart__container__zoom .stock__info__chart 
+      {
+        height: 90%;
+      } */
+
+  .app__body .app__body__left .chart__container .stock__info {
+    position: absolute;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__details {
+    display: flex;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__details p {
+    font-size: 14px;
+    /* font-weight: bold; */
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__details .stock__type {
+    margin-left: 10px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__details .stock__type img {
+    width: 12px;
+    margin-right: 4px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__details .stock__type p {
+    font-size: 10px;
+    /* font-weight: 600; */
+  }
+
+  .app__body .app__body__left .chart__container .stock__info #stock__full__name {
+    font-size: 10px;
+    /* font-weight: bold; */
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__purchase {
+    display: flex;
+    /* align-items: center; */
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__details {
+    display: flex;
+    align-items: center;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__details p {
+    font-size: 12px;
+    /* font-weight: bold; */
+    margin-right: 2px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__details .price__decimals {
+    font-size: 20px;
+    /* font-weight: 900; */
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__details .price__fraction {
+    font-size: 12px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__details span.stock__performance {
+    font-size: 10px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__details p span.clock {
+    margin: 0 3px;
+    font-size: 10px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__details {
+    /* margin: 0 3px;
+        */
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .app__body .app__body__left .chart__container .stock__purchase {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    z-index: 10;
+    column-gap: 10px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__purchase>div {
+    width: auto;
+    height: 30px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__purchase>div img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__purchase #stock__details {
+    display: none;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__change {
+    /* margin-left: 2px; */
+    font-size: 12px;
+  }
+
+  .app__body .app__body__left .chart__container .stock__info .stock__price__change>div {
+    margin-left: 2px;
+  }
+
+
+  .app__body .app__body__left .chart__container .stock__chart {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* background-color: #000000; */
+  }
+
+  .app__body .app__body__left .chart__container .stock__chart.stock__chart__blur .react-stockchart {
+    opacity: 0.7;
+  }
+
+  .app__body .app__body__left .chart__container .chart__range {
+    padding-left: 2px;
+    justify-content: space-around;
+    margin-bottom: 5px;
+  }
+
+  .app__body .app__body__left .chart__container .chart__range .chart__range__value {
+    font-size: 12px;
+    padding: 4px 8px;
+    margin: 0 2px;
+  }
+
+  .app__body .app__body__left .chart__container .chart__zoom {
+    display: none;
+  }
+
+  .app__body .app__body__left .key__statistics {
+    width: 100%;
+    height: 40%;
+    padding: 5px 5px 5px 5px;
+    margin-top: 3px;
+    /* background-color: #00A0E3; */
+  }
+
+  .app__body .app__body__left .key__statistics .ks__title {
+    font-size: 14px !important;
+    padding-left: 2px;
+  }
+
+  .app__body .app__body__left .key__statistics .ks__container {
+    width: 100%;
+    height: 90%;
+    /* background-color: #c8c8c8; */
+  }
+
+  .app__body .app__body__left .key__statistics .ks__container .ks__container__half,
+  .app__body .app__body__left .key__statistics .ks__container .ks__container__full {
+    display: none;
+  }
+
+  .app__body .app__body__left .key__statistics .ks__container .ks__container__mobile {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 5px 2px 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .app__body .app__body__left .key__statistics .ks__container .ks__container__mobile .ks__slot {
+    /* width: 100%; */
+    display: flex;
+    /* background-color: #00A0E3; */
+  }
+
+  .app__body .app__body__left .key__statistics .ks__container .ks__container__mobile .ks__slot .statistics {
+    flex: 1;
+    margin: 4px 0;
+  }
+
+  .app__body .app__body__left .key__statistics .ks__container .ks__slot .statistics .ks__value {
+    font-size: 12px;
+    letter-spacing: -0.1px;
+  }
+
+  .app__body .app__body__left .key__statistics .ks__container .ks__slot .statistics .ks__value .range__line {
+    position: relative;
+    width: 16px;
+    height: 1px;
+    background-color: var(--main-blue);
+    margin: 0 8px;
+  }
+
+  .app__body .app__body__left .key__statistics .ks__container .ks__slot .statistics .ks__name {
+    font-size: 12px;
+  }
+
+
+  .app__body__bottom {
+    height: 100%;
+    background-color: var(--white);
+    position: static;
+    /* background-color: darkcyan; */
+  }
+
+  .app__body__bottom .app__body__footer {
+    left: 3%;
+  }
+
+  .app__body__bottom .app__body__logout {
+    display: none;
+  }
+
+  .app__body__bottom .app__body__logout img {
+    width: 20px;
+    transform: rotate(180deg);
+    margin-right: 5px;
+  }
+
+  .app__body__bottom .app__body__logout span {
+    font-size: 12px !important;
+    font-weight: bold !important;
+    letter-spacing: -0.5px;
+    color: var(--font-primary);
+
+  }
+
+  .app__body .app__body__right {
+    width: 0%;
+    display: none;
+  }
+
+  .app__body .app__body__right.active {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    padding: 0 0px;
+    height: 100vh;
+    width: 100%;
+    z-index: 100000;
+    display: block;
+  }
+
+  .app__footer__menu__icon {
+    display: flex;
+  }
+
+  /*app__footer*/
+  .app__footer {
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    align-items: center;
+  }
+
+  .app__footer .app__footer__menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .app__footer .app__footer__menu .menu__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app__footer .app__footer__menu .menu__box>div svg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .app__footer .app__footer__menu .menu__box>span {
+    font-size: 12px;
+    color: var(--font-primary);
+    font-weight: 500;
+  }
+
+
+
+}

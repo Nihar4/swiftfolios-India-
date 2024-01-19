@@ -1,0 +1,9 @@
+const COLOR_VARS = {
+  SWIFT_COLOR1: '#FF00B3',
+  SWIFT_COLOR2: '#FF3888',
+  SWIFT_COLOR3: '#36BEAD',
+  SWIFT_COLOR4: 'rgba(1, 22, 39, 0.90)',
+  SWIFT_COLOR5: '#CCCCCC'
+}
+
+module.exports = {COLOR_VARS};

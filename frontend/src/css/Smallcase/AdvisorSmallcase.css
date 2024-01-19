@@ -1,0 +1,2004 @@
+* {
+    letter-spacing: -0.5px;
+}
+.advisor__smallcase__strategy__details {
+    position: relative;
+}
+.advisor__smallcase__strategy__details.loader
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advisor__smallcase__strategy__details .advisor__create__smallcase
+{
+    padding: 8px 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    color: var(--font-primary);
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.advisor__smallcase__strategy__details .advisor__strategy__changes {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    display: flex;
+}
+
+.advisor__strategy__changes div {
+    padding: 5px 20px;
+    border: solid 1px #e8e8e8;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--font-primary);
+}
+
+
+
+.advisor__smallcase
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    padding: 1% 10%;
+}
+
+.advisor__smallcase__buttons {
+    display: flex;
+    align-items: center;
+}
+.advisor__smallcase__button
+{
+    padding: 8px 16px;
+    background-color: white;
+    font-size: 12px;
+    font-weight: 900;
+    border: 1px solid var(--font-primary);
+    border-radius: 3px;
+    color: var(--font-primary);
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.advisor__smallcase__button:hover
+{
+    border-color: var(--main-blue);
+    color: var(--main-blue);
+}
+
+.advisor__smallcase .advisor__smallcase__header
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advisor__smallcase__header .advisor__smallcase__title
+{
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--font-primary);
+}
+
+.advisor__smallcase__search__wrapper
+{
+    padding: 0 10px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.advisor__smallcase__search__wrapper .advisor__smallcase__search__box
+{
+    width: 30%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--white);
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+}
+
+.advisor__smallcase__search__wrapper .advisor__smallcase__search__box>img
+{
+    width: 16px;
+}
+
+.advisor__smallcase__search__wrapper .advisor__smallcase__search__box>input
+{
+    width: 85%;
+    height: 100%;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    padding-left: 10px;
+}
+
+.advisor__smallcase__search__wrapper .advisor__smallcase__search__box>input::placeholder
+{
+    color: #808080;
+    font-weight: 500;
+}
+
+.advisor__smallcase .advisor__smallcase__container
+{
+    width: 100%;
+    height: 85%;
+    border-radius: 5px;
+}
+
+.advisor__smallcase .advisor__smallcase__body
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advisor__smallcase__body .advisor__smallcase__strategy__wrapper,
+.advisor__smallcase__body .advisor__smallcase__strategy__details
+{
+    border-radius: 5px;
+    padding: 0px 10px;
+    overflow-y: scroll;
+    height: 85%;
+}
+
+.advisor__smallcase__body .advisor__smallcase__strategy__wrapper
+{
+    width: 30%;
+}
+
+.advisor__smallcase__body .advisor__smallcase__strategy__details
+{
+    width: 65%;
+    padding: 20px 15px;
+    border: 1px solid #e8e8e8;
+}
+
+.advisor__smallcase__strategy__wrapper .advisor__smallcase__strategy__card
+{
+    width: 100%;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+}
+
+.advisor__smallcase__strategy__card .advisor__strategy__info,
+.advisor__smallcase__strategy__card .advisor__strategy__data,
+.advisor__smallcase__strategy__card .advisor__strategy__options
+{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 10px;
+}
+
+
+.advisor__strategy__icon__box
+{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.advisor__strategy__icon__box img
+{
+    width: 20px;
+}
+
+.advisor__strategy__icon__box span
+{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--font-primary);
+}
+
+.advisor__strategy__info .advisor__strategy__headings__box
+{
+    width: 70%;
+    padding-right: 5px;
+}
+
+.advisor__strategy__headings__box .advisor__strategy__heading
+{
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--font-primary);
+}
+
+.advisor__strategy__headings__box .advisor__strategy__news
+{
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.advisor__strategy__data__table
+{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 1px 3px #e8e8e8,0px -1px 1px #f7f7f7;
+    border-radius: 3px;
+    padding: 10px 0px;
+}
+
+.advisor__strategy__data__table>div .title
+{
+    font-size: 12px;
+        font-weight: 500;
+    color: var(--font-primary);
+}
+
+.advisor__strategy__data__table>div .value
+{
+    font-size: 12px;
+        font-weight: 900;
+    text-align: center;
+    margin-top: 5px !important;
+    color: var(--font-primary);
+}
+
+.advisor__smallcase__strategy__card .advisor__strategy__options
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.advisor__smallcase__strategy__card .advisor__strategy__options>p
+{
+    font-size: 12px;
+    color: var(--main-blue);
+    font-weight: 900;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+.advisor__smallcase__strategy__details .advisor__strategy__details__box
+{
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.advisor__strategy__details__box .details__header
+{
+    display: flex;
+    align-items: center;
+}
+
+.advisor__strategy__details__box .details__header>img
+{
+    width: 20px;
+}
+
+.advisor__strategy__details__box .details__header>span
+{
+    font-size: 12px;
+    font-weight: 900;
+        color: var(--font-primary);
+}
+
+.advisor__strategy__details__box .details__content>p
+{
+    font-size: 12px;
+        font-weight: 600;
+    color: var(--font-secondary);
+}
+
+.advisor__strategy__details__box .details__content.advisor__strategy__name>p
+{
+    font-size: 12px;
+        font-weight: 900;
+    color: var(--main-blue);
+}
+
+.advisor__strategy__details__box .details__content.details__chart
+{
+    margin-top: 10px;
+}
+
+.advisor__strategy__details__box .advisor__strategy__stocks
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advisor__strategy__details__box .advisor__strategy__stocks>span
+{
+    font-size: 12px;
+    color: var(--font-primary);
+    margin: 10px 20px 0px 0;
+    padding: 5px 20px;
+    border-radius: 50px;
+    box-shadow: 1px 3px 5px #e8e8e8;
+}
+
+.advisor__strategy__chart
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 1px 3px #e8e8e8,0px -1px 1px #f7f7f7;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+    min-height: 300px;
+}
+
+.advisor__smallcase__strategy__container
+{
+    width: 100%;
+    height: 100%;
+}
+
+.advisor__smallcase__strategy__container .advisor__smallcase__strategy__header
+{
+    width: 100%;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.advisor__smallcase__strategy__header>span
+{
+    font-size: 14px;
+        font-weight: 900;
+        color: var(--font-primary);
+}
+
+
+.advisor__smallcase__strategy__header>div
+{
+    background-color: var(--white);
+    border: 1px solid #e8e8e8;
+    padding: 6px 30px 6px 30px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--font-primary);
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.advisor__smallcase__strategy__header>div:hover
+{
+    opacity: 0.90;
+}
+
+.advisor__smallcase__strategy__body__wrapper
+{
+    width: 100%;
+    height: 80%;
+    margin-top: 10px;
+}
+
+.advisor__smallcase__strategy__body
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.advisor__smallcase__strategy__body.loader
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advisor__smallcase__strategy__body.loader .loading__text
+{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--font-primary)!important;
+    margin-top: 8px!important;
+}
+
+.advisor__smallcase__strategy__body .advisor__smallcase__strategy__form
+{
+    width: 45%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 10px 0;
+    /* box-shadow: 1px 3px 5px #e8e8e8; */
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+}
+
+.advisor__smallcase__strategy__body .advisor__smallcase__strategy__image
+{
+    width: 50%;
+    height: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #00A0E3; */
+}
+
+.advisor__smallcase__strategy__body .advisor__smallcase__strategy__image img
+{
+    width: 50%;
+    /* transform: rotateY(180deg); */
+}
+
+.advisor__smallcase__strategy__form .advisor__strategy__select__container
+{
+    padding: 0 10px;
+}
+
+.advisor__strategy__select__container .advisor__strategy__select__header
+{
+    display: flex;
+    align-items: center;
+}
+
+.advisor__strategy__select__container .advisor__strategy__select__header>img
+{
+    width: 20px;
+}
+
+.advisor__strategy__select__container .advisor__strategy__select__header>span
+{
+    margin-left: 10px;
+    font-size: 12px;
+    color: var(--font-primary);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.advisor__strategy__select__container .advisor__strategy__select__box
+{
+    margin-top: 5px;
+}
+
+.advisor__strategy__select__container .advisor__strategy__text__box,
+.advisor__strategy__select__container .advisor__strategy__input__box
+{
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advisor__strategy__select__container .advisor__strategy__text__box textarea
+{
+    width: 95%;
+    height: 100%;
+    border: none;
+    outline: none;
+    min-height: 140px;
+    resize: none;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--font-primary);
+    padding-top: 5px;
+}
+
+.advisor__strategy__select__container .advisor__strategy__input__box input
+{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    min-height: 35px;
+    padding-left: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--font-primary);
+}
+
+.advisor__strategy__select__container .advisor__strategy__text__box textarea::placeholder,
+.advisor__strategy__select__container .advisor__strategy__input__box input::placeholder
+{
+    color: var(--font-secondary);
+}
+
+.advisor__strategy__select__box .custom-select {
+    width: 100%!important;
+    box-shadow: none;
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+}
+
+.advisor__strategy__select__box .custom-select .custom-select-container
+{
+    min-width: 100%!important;
+}
+
+.advisor__smallcase__strategy__container .advisor__smallcase__strategy__footer
+{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advisor__smallcase__strategy__footer .advisor__strategy__footer__button
+{
+    background-color: var(--white);
+    border: 1px solid #e8e8e8;
+    padding: 6px 25px 6px 25px;
+    font-size: 12px;
+    font-weight: 900;
+    color: var(--font-primary);
+    border-radius: 3px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.advisor__smallcase__strategy__footer .advisor__strategy__footer__button:hover
+{
+    opacity: 0.90;
+}
+
+.advisor__smallcase .smallcase__footer
+{
+    width: 100%;
+    height: 10%;
+}
+
+
+/* start from here */
+
+
+.advisor__strategy__portfolio__table__wrapper
+{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0px 10px; */
+    margin-top: 25px;
+}
+
+.advisor__strategy__portfolio__table__wrapper .advisor__strategy__portfolio__table
+{
+    width: 100%;
+    height: 85%;
+    /* border-radius: 3px; */
+}
+
+.advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__header,
+.advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__body,
+.advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__footer
+{
+    width: 100%;
+    /* background-color: white; */
+}
+
+.advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__header
+{
+    height: 40px;
+        border: 1px solid #e8e8e8;
+}
+
+.advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__footer
+{
+    height: 40px;
+        border: 1px solid #e8e8e8;
+}
+
+.advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__body
+{
+    height: 75%;
+    /* background-color: #19E683; */
+    border: 1px solid #e8e8e8;
+    overflow-y: scroll;
+}
+
+.advisor__strategy__portfolio__table__header .advisor__table__row,
+.advisor__strategy__portfolio__table__body .advisor__table__row,
+.advisor__strategy__portfolio__table__footer .advisor__table__row
+{
+    width: 100%;
+    padding: 7px 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.advisor__strategy__portfolio__table__header .advisor__edit__table__row,
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row,
+.advisor__strategy__portfolio__table__footer .advisor__edit__table__row
+{
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.advisor__strategy__portfolio__table__header .advisor__table__row,
+.advisor__strategy__portfolio__table__header .advisor__edit__table__row
+{
+    font-size: 12px;
+}
+
+.advisor__strategy__portfolio__table__footer .advisor__table__row,
+.advisor__strategy__portfolio__table__footer .advisor__edit__table__row
+{
+    font-size: 12px;
+}
+
+.advisor__advisor__strategy__portfolio__table__header .advisor__table__row>div,
+.advisor__strategy__portfolio__table__footer .advisor__table__row>div,
+.advisor__strategy__portfolio__table__header .advisor__edit__table__row>div,
+.advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div
+{
+    font-weight: 700;
+}
+
+.advisor__strategy__portfolio__table__body .advisor__table__row:hover,
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row:hover
+{
+    background-color: #fcfcfc;
+    border-radius: 3px;
+}
+
+.advisor__strategy__portfolio__table__header .advisor__table__row>div:nth-child(1),
+.advisor__strategy__portfolio__table__body .advisor__table__row>div:nth-child(1),
+.advisor__strategy__portfolio__table__footer .advisor__table__row>div:nth-child(1)
+{
+    flex: 4;
+    font-size: 12px;
+}
+
+.advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(1),
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(1),
+.advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(1)
+{
+    flex: 4;
+    padding: 5px 0;
+    color: var(--font-primary);
+}
+
+.advisor__strategy__portfolio__table__header .advisor__table__row>div:nth-child(2),
+.advisor__strategy__portfolio__table__body .advisor__table__row>div:nth-child(2),
+.advisor__strategy__portfolio__table__footer .advisor__table__row>div:nth-child(2)
+{
+    flex: 4;
+    font-size: 12px;
+}
+
+.advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(2),
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(2),
+.advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(2)
+{
+    flex: 4;
+    /* background-color: #d4e300; */
+}
+
+.advisor__strategy__portfolio__table__header .advisor__table__row>div:nth-child(3),
+.advisor__strategy__portfolio__table__body .advisor__table__row>div:nth-child(3),
+.advisor__strategy__portfolio__table__footer .advisor__table__row>div:nth-child(3)
+{
+    flex: 5;
+    padding-right: 5px;
+    font-size: 12px;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(3),
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(3),
+.advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(3)
+{
+    flex: 2;
+}
+
+.advisor__strategy__portfolio__table__header .advisor__table__row>div:nth-child(4),
+.advisor__strategy__portfolio__table__body .advisor__table__row>div:nth-child(4),
+.advisor__strategy__portfolio__table__footer .advisor__table__row>div:nth-child(4)
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(4),
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(4),
+.advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(4)
+{
+    flex: 4;
+    /* display: flex; */
+    /* justify-content: center; */
+
+}
+
+.advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(5),
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(5),
+.advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(5)
+{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.advisor__strategy__portfolio__table__body .advisor__table__row>div>input,
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div>input
+{
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 2px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+    background-color: transparent;
+    padding: 6px 0 6px 10px;
+    cursor: text;
+    font-weight: 700;
+    transition: 0.advisor__3s;
+}
+
+.advisor__strategy__portfolio__table__body .advisor__table__row>div .advisor__stock__remove,
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div .advisor__stock__remove
+{
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.advisor__3s;
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advisor__strategy__portfolio__table__body .advisor__table__row>div .advisor__stock__remove:hover,
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div .advisor__stock__remove:hover
+{
+    background-color: #bce8ff;
+}
+
+.advisor__strategy__portfolio__table__body .advisor__table__row>div .advisor__stock__remove img
+{
+    width: 10px;
+    height: 10px;
+}
+
+.advisor__strategy__portfolio__table__body .advisor__table__row>div>input:focus,
+.advisor__strategy__portfolio__table__body .advisor__edit__table__row>div>input:focus
+{
+    border: 1px solid var(--font-secondary);
+    
+}
+
+
+.advisor__strategy__portfolio__table .advisor__strategy__table__stock
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.advisor__strategy__table__stock .advisor__strategy__table__stock__code
+{
+    font-size: 11px;
+    color: var(--font-primary);
+    font-weight: 700;
+}
+
+.advisor__strategy__table__stock .advisor__strategy__table__stock__name
+{
+    max-width: 200px;
+    color: var(--font-primary);
+    font-size: 11px;
+    font-weight: 500;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.advisor__strategy__portfolio__table__wrapper .advisor__strategy__performance__buttons
+{
+    display: flex;
+    width: 100%;
+}
+
+.advisor__strategy__portfolio__table__wrapper .advisor__strategy__performance__buttons>div
+{
+    padding: 7px 15px 7px 15px;
+    font-size: 12px;
+    margin: 0 10px 0 0;
+    font-weight: 700;
+    color: var(--font-primary);
+    background-color: var(--white);
+    border: 1px solid #e8e8e8;
+    border-radius: 3px;
+    transition: 0.advisor__3s;
+    cursor: pointer;
+}
+
+.advisor__strategy__portfolio__table__wrapper .advisor__strategy__performance__buttons>div:hover
+{
+    opacity: 0.advisor__90;
+}
+
+.advisor__strategy__portfolio__table__wrapper .advisor__strategy__performance__buttons>div>img
+{
+    width: 10px;
+    margin-left: 4px;
+}
+
+.advisor__strategy__portfolio__stock__wrapper
+{
+    width: 100%;
+}
+
+.advisor__strategy__portfolio__stock__wrapper .advisor__strategy__portfolio__stock__options
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+.advisor__strategy__portfolio__stock__wrapper .advisor__strategy__portfolio__stock__options .stock__search__icon img
+{
+    width: 16px;
+}
+
+.advisor__strategy__portfolio__stock__wrapper>img
+{
+    width: 60%;
+}
+
+
+.advisor__strategy__portfolio__stock__options .stock__search
+{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 3px !important;
+    border: 1px solid #e8e8e8 !important;
+    position: relative;
+    /* background-color: #666666; */
+}
+
+.advisor__strategy__portfolio__stock__options .stock__search .stock__search__icon
+{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__search input
+{
+    width: 90%;
+    height: 100%;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__search input::placeholder
+{
+    text-transform: capitalize;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__suggestions
+{
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: var(--shadow-code);
+    overflow: scroll;
+    max-height: 200px!important;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__suggestions .search__loader
+{
+    height: 200px!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__suggestions .search__loader>p
+{
+    margin-top: 10px!important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__suggestions>p
+{
+    width: 100%;
+    display: flex;
+    padding: 7px 30px!important;
+    cursor: pointer;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__suggestions>p>span:nth-child(1)
+{
+    flex: 3;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__suggestions>p>span:nth-child(2)
+{
+    flex: 8;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__suggestions>p>span:nth-child(3)
+{
+    flex: 2;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.advisor__strategy__portfolio__stock__options .stock__suggestions>p>span .search__highlight
+{
+    background-color: #009fe33a;
+}
+
+.advisor__strategy__portfolio__stock__options .advisor__strategy__stock__buttons
+{
+    width: 40%;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.advisor__strategy__portfolio__stock__options .advisor__strategy__stock__buttons>div
+{
+    background-color: var(--white);
+    color: var(--font-primary);
+    border: 1px solid #e8e8e8;
+    padding: 7px 15px 7px 15px;
+    font-size: 12px;
+    margin: 0 10px;
+    font-weight: 700;
+    border-radius: 3px;
+    transition: 0.advisor__3s;
+    cursor: pointer;
+}
+
+.advisor__strategy__portfolio__stock__options .advisor__strategy__stock__buttons>div>a
+{
+    color: var(--font-primary);
+    text-decoration: none;
+}
+
+.advisor__strategy__portfolio__stock__options .advisor__strategy__stock__buttons>div:hover
+{
+    opacity: 0.advisor__90;
+}
+
+.advisor__smallcase__success__page
+{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.advisor__smallcase__success__page .advisor__success__message
+{
+    font-size: 12px;
+    color: var(--font-primary);
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.advisor__smallcase__container__empty
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advisor__smallcase__container__empty .advisor__create__smallcase__content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px;
+}
+
+.advisor__smallcase__container__empty .advisor__create__smallcase__content>img
+{
+    width: 120px;
+}
+
+.advisor__smallcase__container__empty .advisor__create__smallcase__content>p
+{
+    font-size: 12px;
+    margin-top: -10px !important;
+    color: var(--font-secondary);
+}
+
+.advisor__smallcase__container__empty>div.advisor__create__smallcase
+{
+    margin-top: 50px;
+}
+
+.advisor__smallcase__container__empty>div.advisor__create__smallcase button
+{
+    padding: 10px 18px;
+    border-radius: 3px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: var(--main-blue);
+    color: var(--white);
+    font-weight: 500;
+    transition: 0.advisor__3s;
+}
+
+.advisor__smallcase__container__empty>div.advisor__create__smallcase button:hover
+{
+    opacity: 0.advisor__90;
+}
+/* 
+.advisor__backtest__container
+{
+    background-color: #BBBBBB;
+} */
+.advisor__backtest__container .advisor__backtest__header
+{
+    width: 100%;
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advisor__backtest__header>span
+{
+    color: var(--main-blue);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.advisor__backtest__header>div
+{
+    background-color: var(--white);
+    padding: 6px 20px 6px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--font-primary);
+    border-radius: 20px;
+    /* box-shadow: 0 2px 5px rgb(0 0 0 / 05%); */
+    transition: 0.advisor__3s;
+    cursor: pointer;
+}
+
+.advisor__backtest__header>div:hover
+{
+    opacity: 0.advisor__90;
+}
+
+.advisor__backtest__header>div>span
+{
+    margin-left: 5px;
+}
+
+.advisor__backtest__container .advisor__backtest__wrapper
+{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.advisor__backtest__wrapper .advisor__backtest__chart,
+.advisor__backtest__wrapper .advisor__backtest__data
+{
+    width: 48%;
+}
+
+.advisor__backtest__wrapper .advisor__backtest__chart
+{
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 1px solid #e8e8e8;
+}
+
+
+.advisor__backtest__wrapper .advisor__backtest__chart .advisor__backtest__chart__wrapper
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+.advisor__backtest__wrapper .advisor__backtest__chart .advisor__backtest__chart__wrapper>p
+{
+    margin-bottom: 40px !important;
+    align-self: flex-start;
+    font-size: 12px;
+}
+
+.advisor__backtest__wrapper .advisor__backtest__data
+{
+    border-radius: 5px;    
+    padding: 10px 20px;
+}
+
+.advisor__backtest__wrapper .advisor__backtest__data .advisor__backtest__data__table
+{
+    margin-bottom: 20px;
+}
+
+.advisor__backtest__data__table .advisor__table__wrapper
+{
+    border-radius: 3px;
+    border: 1px solid #e8e8e8;
+    padding: 5px 5px;
+}
+
+.advisor__backtest__data__table .advisor__data__table__title
+{
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.advisor__backtest__data__table table
+{
+    width: 100%;
+}
+
+.advisor__backtest__data__table  tbody tr th
+{
+    font-weight: 700;
+    font-size: 12px;
+    width: 100px;
+    text-align: left;
+    color: var(--font-primary);
+}
+
+.advisor__backtest__data__table thead tr td
+{
+    font-size: 11px;
+    padding-bottom: 5px;
+    color: var(--font-primary);
+}
+
+.advisor__backtest__data__table table thead tr
+{
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.advisor__backtest__data__table  tbody tr td
+{
+    font-weight: 500;
+    font-size: 11px;
+    padding: 5px 0;
+    color: var(--font-primary);
+}
+
+.advisor__backtest__container .advisor__backtest__buttons
+{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.advisor__backtest__buttons .advisor__backtest__save
+{
+    background-color: var(--white);
+    padding: 7px 15px 7px 15px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid #e8e8e8;
+    color: var(--font-primary);
+    border-radius: 3px;
+    transition: 0.advisor__3s;
+    cursor: pointer;
+    margin: 0 20px 0 0;
+}
+
+.advisor__backtest__buttons .advisor__backtest__save:hover
+{
+    opacity: 0.8;
+}
+
+
+@media only screen and (max-width : 768px)
+{
+    
+    .advisor__smallcase__container
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    .advisor__smallcase__container .advisor__smallcase__header
+    {
+        padding: 15px 10px 0;
+    }
+
+    
+    .advisor__smallcase__header .advisor__smallcase__title>img
+    {
+        width: 14px;
+    }
+
+    .advisor__smallcase__header .advisor__smallcase__title>span
+    {
+        margin-left: 5px;
+        font-size: 11px;
+        letter-spacing: -0.advisor__2px;
+    }
+
+    .advisor__smallcase__header .advisor__smallcase__menu .advisor__smallcase__stratergy__button
+    {
+        padding: 8px 12px 8px 12px;
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .advisor__smallcase__search__wrapper
+    {
+        padding: 0 20px;
+        width: 100%;
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .advisor__smallcase__search__wrapper .advisor__smallcase__search__box
+    {
+        width: 100%;
+        height: 35px;
+    }
+
+    .advisor__smallcase__search__wrapper .advisor__smallcase__search__box>img
+    {
+        width: 14px;
+    }
+
+    .advisor__smallcase__search__wrapper .advisor__smallcase__search__box>input
+    {
+        font-size: 11px;
+    }
+
+    .advisor__smallcase__container .advisor__smallcase__body
+    {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 2px;
+        margin-top: 10px;
+    }
+
+    .advisor__smallcase__body .advisor__smallcase__strategy__wrapper,
+    .advisor__smallcase__body .advisor__smallcase__strategy__details
+    {
+        width: 100%;
+        padding: 10px 0px;
+        overflow-y: scroll;
+        height: 230px;
+        margin-bottom: 10px;
+        margin-bottom: 10px;
+        /* background-color: #ebebeb; */
+    }
+
+    .advisor__smallcase__strategy__wrapper .advisor__smallcase__strategy__card
+    {
+        width: 100%;
+        padding: 10px 10px 0;
+        margin-bottom: 10px;
+        
+    }
+
+    .advisor__smallcase__strategy__card .advisor__strategy__info,
+    .advisor__smallcase__strategy__card .advisor__strategy__data,
+    .advisor__smallcase__strategy__card .advisor__strategy__options
+    {
+        margin: 0px 0px 10px;
+    }
+
+    .advisor__strategy__icon__box
+    {
+        width: 30%;
+    }
+
+    .advisor__strategy__icon__box img
+    {
+        width: 12px;
+    }
+
+    .advisor__strategy__icon__box span
+    {
+        font-size: 10px;
+    }
+
+    .advisor__strategy__info .advisor__strategy__headings__box
+    {
+        width: 70%;
+        padding-right: 5px;
+    }
+
+    .advisor__strategy__headings__box .advisor__strategy__heading
+    {
+        font-size: 10px;
+    }
+
+    .advisor__strategy__headings__box .advisor__strategy__news
+    {
+        font-size: 10px;
+        color: var(--font-primary);
+        font-weight: 500;
+    }
+
+    .advisor__strategy__data .advisor__strategy__data__table
+    {
+        width: 70%;
+    }
+
+    .advisor__strategy__data__table>div .advisor__title
+    {
+        font-size: 10px;
+        font-weight: 600;
+        color: var(--font-primary);
+    }
+
+    .advisor__strategy__data__table>div .advisor__value
+    {
+        font-size: 11px;
+        font-weight: 500;
+        color: var(--font-primary);
+    }
+
+    .advisor__smallcase__strategy__card .advisor__strategy__options
+    {
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .advisor__smallcase__strategy__card .advisor__strategy__options>p
+    {
+        font-size: 11px;
+    }
+
+    .advisor__smallcase__strategy__card .advisor__strategy__options .advisor__strategy__buy__button
+    {
+        background-color: var(--white);
+        padding: 4px 7px 4px 7px;
+        font-size: 10px;
+    }
+
+    .advisor__smallcase__strategy__details .advisor__strategy__details__box
+    {
+        width: 100%;
+        margin-bottom: 15px;
+        padding: 0 10px;
+    }
+
+    .advisor__strategy__details__box .advisor__details__header
+    {
+        display: flex;
+        align-items: center;
+    }
+
+    .advisor__strategy__details__box .advisor__details__header>img
+    {
+        width: 16px;
+    }
+
+    .advisor__strategy__details__box .advisor__details__header>span
+    {
+        font-size: 11px;
+    }
+
+    .advisor__strategy__details__box .advisor__details__content>p
+    {
+        font-size: 11px;
+        font-weight: 500;
+        margin-top: 4px;
+        color: var(--font-primary);
+    }
+
+    .advisor__strategy__details__box .advisor__details__content.advisor__strategy__name>p
+    {
+        color: var(--main-blue);
+        font-weight: 600;
+    }
+
+
+
+    .advisor__smallcase__strategy__container
+    {
+        width: 100%;
+        height: 100%;
+        padding: 0px 10px 0;
+    }
+
+    .advisor__smallcase__strategy__container .advisor__smallcase__strategy__header
+    {
+        width: 100%;
+        padding: 15px 0px;
+    }
+
+    .advisor__smallcase__strategy__header>span
+    {
+        font-size: 11px;
+    }
+
+    .advisor__smallcase__strategy__header>div
+    {
+        padding: 15px 15px 15px 15px;
+        font-size: 12px;
+        box-shadow: none;
+    }
+
+    .advisor__smallcase__strategy__header>div>img
+    {
+        display: none;
+    }
+
+
+    .advisor__smallcase__strategy__body__wrapper
+    {
+        width: 100%;
+        height: 75%;
+        padding: 0 0px;
+        margin-top: 0px;
+    }
+
+    .advisor__smallcase__strategy__body
+    {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 5px;
+    }
+
+    .advisor__smallcase__strategy__body .advisor__smallcase__strategy__form
+    {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 10px 0;
+    }
+
+    .advisor__smallcase__strategy__body .advisor__smallcase__strategy__image
+    {
+        display: none;
+    }
+
+
+    .advisor__smallcase__strategy__form .advisor__strategy__select__container
+    {
+        padding: 0 10px;
+    }
+
+    .advisor__strategy__select__container .advisor__strategy__select__header>img
+    {
+        width: 16px;
+    }
+
+
+    .advisor__strategy__select__container .advisor__strategy__select__header>span
+    {
+        margin-left: 6px;
+        font-size: 11px;
+    }
+
+    .advisor__strategy__select__container .advisor__strategy__select__box
+    {
+        margin-top: 5px;
+    }
+
+    .advisor__strategy__select__container .advisor__strategy__select__box .advisor__custom-select .advisor__custom-select-title,
+    .advisor__strategy__select__container .advisor__strategy__select__box .advisor__custom-select .advisor__custom-select-option{
+        font-size: 11px!important;
+    }
+
+    .advisor__strategy__select__container .advisor__strategy__text__box,
+    .advisor__strategy__select__container .advisor__strategy__input__box
+    {
+        margin-top: 5px;
+    }
+
+    .advisor__strategy__select__container .advisor__strategy__text__box textarea
+    {
+        width: 95%;
+        height: 100%;
+        font-size: 10px;
+    }
+
+    .advisor__strategy__select__container .advisor__strategy__input__box input
+    {
+        width: 100%;
+        height: 100%;
+        min-height: 40px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+
+    .advisor__strategy__select__container .advisor__strategy__text__box textarea::placeholder,
+    .advisor__strategy__select__container .advisor__strategy__input__box input::placeholder
+    {
+        color: var(--font-primary);
+    }
+
+    .advisor__smallcase__strategy__container .advisor__smallcase__strategy__footer
+    {
+        margin-top: 20px;
+        width: 100%;
+        padding: 5px 0px;
+    }
+
+    .advisor__smallcase__strategy__footer .advisor__strategy__footer__button
+    {
+        padding: 7px 20px 7px 20px;
+        box-shadow: none;
+        font-size: 10px;
+    }
+
+    .advisor__smallcase__strategy__footer .advisor__strategy__footer__button>img
+    {
+        display: none;
+    }
+
+    .advisor__strategy__portfolio__table__wrapper
+    {
+        width: 100%;
+        padding: 0px 0;
+        margin-top: 20px;
+    }
+
+    .advisor__strategy__portfolio__table__wrapper .advisor__strategy__portfolio__table
+    {
+        width: 100%;
+        height: 90%;
+    }
+
+    .advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__header,
+    .advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__body,
+    .advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__footer
+    {
+        width: 100%;
+    }
+
+    .advisor__strategy__portfolio__table .advisor__strategy__portfolio__table__body
+    {
+        height: 75%;
+        overflow-y: scroll;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__table__row,
+    .advisor__strategy__portfolio__table__body .advisor__table__row,
+    .advisor__strategy__portfolio__table__footer .advisor__table__row
+    {
+        width: 100%;
+        padding: 4px 2px;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__edit__table__row,
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row,
+    .advisor__strategy__portfolio__table__footer .advisor__edit__table__row
+    {
+        width: 100%;
+        font-size: 10px;
+        padding: 4px 2px;
+    }
+
+    .advisor__strategy__portfolio__table__footer .advisor__table__row,
+    .advisor__strategy__portfolio__table__footer .advisor__edit__table__row
+    {
+        margin-top: 10px;
+        border-top: 1px solid #e8e8e8;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__table__row>div,
+    .advisor__strategy__portfolio__table__footer .advisor__table__row>div,
+    .advisor__strategy__portfolio__table__header .advisor__edit__table__row>div,
+    .advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div
+    {
+        font-weight: 700;
+    }
+
+    .advisor__strategy__portfolio__table__body .advisor__table__row:hover,
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row:hover
+    {
+        background-color: #fcfcfc;
+        border-radius: 3px;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__table__row>div:nth-child(1),
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div:nth-child(1),
+    .advisor__strategy__portfolio__table__footer .advisor__table__row>div:nth-child(1)
+    {
+        font-size: 11px;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(1),
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(1),
+    .advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(1)
+    {
+        flex: 2;
+        font-size: 10px;
+        padding-left: 5px;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__table__row>div:nth-child(2),
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div:nth-child(2),
+    .advisor__strategy__portfolio__table__footer .advisor__table__row>div:nth-child(2)
+    {
+        font-size: 11px;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(2),
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(2),
+    .advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(2)
+    {
+        flex: 2;
+        font-size: 10px;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__table__row>div:nth-child(3),
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div:nth-child(3),
+    .advisor__strategy__portfolio__table__footer .advisor__table__row>div:nth-child(3)
+    {
+        flex: 3;
+        font-size: 11px;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__table__row>div:nth-child(4),
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div:nth-child(4),
+    .advisor__strategy__portfolio__table__footer .advisor__table__row>div:nth-child(4)
+    {
+        flex: 3;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(3),
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(3),
+    .advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(3)
+    {
+        flex: 1.advisor__5;
+        font-size: 10px;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(4),
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(4),
+    .advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(4)
+    {
+        padding-right: 5px;
+        flex: 1.advisor__5;
+    }
+
+    .advisor__strategy__portfolio__table__header .advisor__edit__table__row>div:nth-child(5),
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(5),
+    .advisor__strategy__portfolio__table__footer .advisor__edit__table__row>div:nth-child(5)
+    {
+        flex: 1;
+        padding-right: 5px;
+
+    }
+
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div:nth-child(5)>span
+    {
+        font-size: 9px !important;
+        font-weight: 500 !important;
+    }
+
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div>input,
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div>input
+    {
+        width: 100%;
+        border-width: 1px;
+        
+    }
+
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div .advisor__stock__remove,
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div .advisor__stock__remove
+    {
+        padding: 5px;
+        cursor: pointer;
+        transition: 0.advisor__3s;
+        border-radius: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div .advisor__stock__remove:hover,
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div .advisor__stock__remove:hover
+    {
+        background-color: #bce8ff;
+    }
+
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div .advisor__stock__remove img
+    {
+        width: 10px;
+        height: 10px;
+    }
+
+    .advisor__strategy__portfolio__table__body .advisor__table__row>div>input:focus,
+    .advisor__strategy__portfolio__table__body .advisor__edit__table__row>div>input:focus
+    {
+        border-bottom: 1px solid var(--font-primary);
+    }
+
+
+    .advisor__strategy__portfolio__table .advisor__strategy__table__stock
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advisor__strategy__table__stock .advisor__strategy__table__stock__code
+    {
+        font-size: 9px;
+        font-weight: 700;
+    }
+
+    .advisor__strategy__table__stock .advisor__strategy__table__stock__name
+    {
+        max-width: 50px;
+        font-size: 9px;
+    }
+
+    .advisor__strategy__portfolio__table__wrapper .advisor__strategy__performance__buttons
+    {
+        display: flex;
+        width: 100%;
+    }
+
+    .advisor__strategy__portfolio__table__wrapper .advisor__strategy__performance__buttons>div
+    {
+        padding: 6px 12px 6px 12px;
+        font-size: 11px;
+    }
+
+    .advisor__strategy__portfolio__stock__wrapper
+    {
+        width: 100%;
+        /* justify-content: center; */
+        padding: 5px 0;
+    }
+
+    .advisor__strategy__portfolio__stock__wrapper .advisor__strategy__portfolio__stock__options
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: #19E683; */
+    }
+
+    .advisor__strategy__portfolio__stock__options .stock__search
+    {
+        width: 100%;
+        height: 35px;
+        border: none!important;
+        padding: 0 5px!important;
+    }
+
+    .advisor__strategy__portfolio__stock__options .stock__search>input
+    {
+        font-size: 12px;
+    }
+
+    .advisor__strategy__portfolio__stock__options .stock__suggestions
+    {
+        max-height: 200px!important;
+    }
+
+    .advisor__strategy__portfolio__stock__options .stock__suggestions .advisor__search__loader
+    {
+        height: 200px!important;
+    }
+
+    .advisor__strategy__portfolio__stock__options .stock__suggestions>p
+    {
+        padding: 6px 10px!important;
+    }
+
+    .advisor__strategy__portfolio__stock__options .stock__suggestions>p>span:nth-child(1)
+    {
+        font-size: 10px;
+    }
+
+    .advisor__strategy__portfolio__stock__options .stock__suggestions>p>span:nth-child(2)
+    {
+        font-size: 8px;
+    }
+
+    .advisor__strategy__portfolio__stock__options .stock__suggestions>p>span:nth-child(3)
+    {
+        font-size: 10px;
+    }
+
+    .advisor__strategy__portfolio__stock__options .advisor__strategy__stock__buttons
+    {
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .advisor__strategy__portfolio__stock__options .advisor__strategy__stock__buttons>div
+    {
+        margin: 0px 15px 0px 0px;
+        font-size: 11px;
+    }
+
+    .advisor__strategy__portfolio__stock__options .advisor__strategy__stock__buttons>div:hover
+    {
+        background-color: #f8f8f8;
+    }
+
+    .advisor__smallcase__success__page
+    {
+        min-height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .advisor__smallcase__success__page .advisor__success__message
+    {
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+
+    .advisor__backtest__container .advisor__backtest__header
+    {
+        width: 100%;
+        padding: 5px 10px;
+    }
+
+    .advisor__backtest__header>span
+    {
+        font-size: 11px;
+    }
+
+    .advisor__backtest__header>div
+    {
+        font-size: 11px;
+    }
+
+    .advisor__backtest__container .advisor__backtest__wrapper
+    {
+        margin-top: 10px;
+        padding: 0 2%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .advisor__backtest__wrapper .advisor__backtest__chart,
+    .advisor__backtest__wrapper .advisor__backtest__data
+    {
+        width: 100%;
+    }
+
+    .advisor__backtest__wrapper .advisor__backtest__chart
+    {
+        padding: 10px 2px;
+        font-size: 8px;
+    }
+
+
+    .advisor__backtest__wrapper .advisor__backtest__chart .advisor__backtest__chart__wrapper>p
+    {
+        margin-bottom: 20px !important;
+        font-size: 11px;
+        padding: 0 5px;
+    }
+
+    .advisor__backtest__wrapper .advisor__backtest__data
+    {
+        border-radius: 5px;
+        padding: 10px 5px;
+    }
+
+    .advisor__backtest__wrapper .advisor__backtest__data .advisor__backtest__data__table
+    {
+        margin-bottom: 10px;
+    }
+
+    .advisor__backtest__data__table .advisor__data__table__title
+    {
+        font-size: 11px;
+        margin-bottom: 10px;
+    }
+
+    .advisor__backtest__data__table>div:nth-child(2)
+    {
+        overflow-x: scroll;
+    }
+
+    .advisor__backtest__data__table table
+    {
+        width: 100%;
+    }
+
+    .advisor__backtest__data__table  thead tr td
+    {
+        font-size: 10px;
+    }
+
+    .advisor__backtest__data__table  tbody tr th
+    {
+        width: 70px;
+        padding: 0 60px 0 0;
+        font-size: 10px;
+    }
+
+    .advisor__backtest__data__table  tbody tr td
+    {
+        font-weight: 500;
+        min-width: 100px;
+    }
+
+    .advisor__backtest__container .advisor__backtest__buttons
+    {
+        margin-top: 10px;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    .advisor__backtest__buttons .advisor__backtest__save
+    {
+        padding: 6px 10px 6px 10px;
+        font-size: 10px;
+    }
+}
